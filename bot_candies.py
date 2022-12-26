@@ -47,8 +47,8 @@ def game_process(message):
         if candies[message.chat.id] > 28:
             candies[message.chat.id] -= int(message.text)
             bot.send_message(message.chat.id, f'Осталось {candies[message.chat.id]}')
-            if candies [message.chat.id > 28]:
-                take = randint(1, candies[message.chat.id]% 29)
+            if candies [message.chat.id] > 28:
+                take = randint(1, 29)
                 candies[message.chat.id] -= take
                 bot.send_message(message.chat.id, f'Бот взял {take}')
                 bot.send_message(message.chat.id, f'Осталось {candies[message.chat.id]}')
